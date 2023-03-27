@@ -286,7 +286,7 @@ class PaymentClass extends Component {
                 <Offer />
               </View>
               <Text style={style.footerTxt}>selectOffer,More</Text>
-              <View style={{marginTop:'2%'}}>
+              <View style={{marginTop:'2.5%'}}>
               <RightArrow />
               </View>
             
