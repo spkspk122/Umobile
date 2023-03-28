@@ -1,0 +1,262 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.umobile"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/db-mm-026/Desktop/Umobile/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/db-mm-026/Desktop/Umobile/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->[com.facebook.flipper:flipper:0.125.0] /Users/db-mm-026/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.125.0] /Users/db-mm-026/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[:react-native-community_netinfo] /Users/db-mm-026/Desktop/Umobile/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+14-->[:react-native-community_netinfo] /Users/db-mm-026/Desktop/Umobile/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->[:react-native-fs] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+15-->[:react-native-fs] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- Required to access Google Play Licensing -->
+16-->[:react-native-select-contact] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-select-contact/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-72
+16-->[:react-native-select-contact] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-select-contact/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-69
+17    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+17-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-73
+17-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-70
+18    <!--
+19         Required to keep CPU alive while downloading files
+20        (NOT to keep screen awake)
+21    -->
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-68
+22-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:22-65
+23
+24    <application
+24-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:6:5-25:19
+25        android:name="com.umobile.MainApplication"
+25-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:7:7-38
+26        android:allowBackup="false"
+26-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:11:7-34
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.6.0] /Users/db-mm-026/.gradle/caches/transforms-3/5c61d7afbc1bcd99cb491da6ba2ee6c1/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:9:7-41
+30        android:label="@string/app_name"
+30-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:8:7-39
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:10:7-52
+32        android:supportsRtl="true"
+32-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:20:9-35
+33        android:theme="@style/AppTheme"
+33-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:12:7-38
+34        android:usesCleartextTraffic="true" >
+34-->/Users/db-mm-026/Desktop/Umobile/android/app/src/debug/AndroidManifest.xml:8:9-44
+35        <activity
+35-->/Users/db-mm-026/Desktop/Umobile/android/app/src/debug/AndroidManifest.xml:11:9-111
+36            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+36-->/Users/db-mm-026/Desktop/Umobile/android/app/src/debug/AndroidManifest.xml:11:19-83
+37            android:exported="false" />
+37-->/Users/db-mm-026/Desktop/Umobile/android/app/src/debug/AndroidManifest.xml:11:84-108
+38        <activity
+38-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:13:7-24:18
+39            android:name="com.umobile.MainActivity"
+39-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:14:9-37
+40            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+40-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:16:9-118
+41            android:exported="true"
+41-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:19:9-32
+42            android:label="@string/app_name"
+42-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:15:9-41
+43            android:launchMode="singleTask"
+43-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:17:9-40
+44            android:windowSoftInputMode="adjustResize" >
+44-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:18:9-51
+45            <intent-filter>
+45-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:20:9-23:25
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:21:13-65
+46-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:21:21-62
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:22:13-73
+48-->/Users/db-mm-026/Desktop/Umobile/android/app/src/main/AndroidManifest.xml:22:23-70
+49            </intent-filter>
+50        </activity>
+51
+52        <provider
+52-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+53            android:name="com.imagepicker.ImagePickerProvider"
+53-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-63
+54            android:authorities="com.umobile.imagepickerprovider"
+54-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-71
+55            android:exported="false"
+55-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+56            android:grantUriPermissions="true" >
+56-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+57            <meta-data
+57-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:70
+58                android:name="android.support.FILE_PROVIDER_PATHS"
+58-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+59                android:resource="@xml/imagepicker_provider_paths" />
+59-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-67
+60        </provider>
+61
+62        <meta-data
+62-->[:react-native-pg-react-native-sdk] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-pg-react-native-sdk/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:69
+63            android:name="com.google.android.gms.version"
+63-->[:react-native-pg-react-native-sdk] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-pg-react-native-sdk/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-58
+64            android:value="@integer/google_play_services_version" />
+64-->[:react-native-pg-react-native-sdk] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-pg-react-native-sdk/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-66
+65
+66        <provider
+66-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
+67            android:name="com.RNFetchBlob.Utils.FileProvider"
+67-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
+68            android:authorities="com.umobile.provider"
+68-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
+69            android:exported="false"
+69-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
+70            android:grantUriPermissions="true" >
+70-->[:rn-fetch-blob] /Users/db-mm-026/Desktop/Umobile/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
+71            <meta-data
+71-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:70
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+73                android:resource="@xml/provider_paths" />
+73-->[:react-native-image-picker] /Users/db-mm-026/Desktop/Umobile/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-67
+74        </provider>
+75
+76        <activity
+76-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:22:9-25:72
+77            android:name="com.cashfree.pg.ui.web_checkout.CFPaymentActivity"
+77-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:23:13-77
+78            android:exported="false"
+78-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:24:13-37
+79            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+79-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:25:13-69
+80        <activity
+80-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:26:9-29:66
+81            android:name="com.cashfree.pg.ui.CFResponseHandlerActivity"
+81-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:27:13-72
+82            android:exported="false"
+82-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:28:13-37
+83            android:theme="@style/Theme.AppCompat.Translucent" />
+83-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:29:13-63
+84        <activity
+84-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:30:9-33:66
+85            android:name="com.cashfree.pg.ui.upi.CFUPIPaymentActivity"
+85-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:31:13-71
+86            android:exported="false"
+86-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:32:13-37
+87            android:theme="@style/Theme.AppCompat.Translucent" />
+87-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:33:13-63
+88        <activity
+88-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:34:9-37:66
+89            android:name="com.cashfree.pg.ui.amazonpay.AmazonPayActivity"
+89-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:35:13-74
+90            android:exported="false"
+90-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:36:13-37
+91            android:theme="@style/Theme.AppCompat.Translucent" />
+91-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:37:13-63
+92        <activity
+92-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:38:9-41:66
+93            android:name="com.cashfree.pg.ui.gpay.GooglePayActivity"
+93-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:39:13-69
+94            android:exported="false"
+94-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:40:13-37
+95            android:theme="@style/Theme.AppCompat.Translucent" />
+95-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:41:13-63
+96        <activity
+96-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:42:9-45:66
+97            android:name="com.cashfree.pg.ui.phonepe.CFPhonePayActivity"
+97-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:43:13-73
+98            android:exported="false"
+98-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:44:13-37
+99            android:theme="@style/Theme.AppCompat.Translucent" />
+99-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:45:13-63
+100        <activity
+100-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:46:9-49:72
+101            android:name="com.cashfree.pg.ui.simulator.CFUPITestAppActivity"
+101-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:47:13-77
+102            android:exported="false"
+102-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:48:13-37
+103            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+103-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:49:13-69
+104        <activity
+104-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:50:9-53:66
+105            android:name="com.cashfree.pg.ui.simulator.CFUPITestActivity"
+105-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:51:13-74
+106            android:exported="false"
+106-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:52:13-37
+107            android:theme="@style/Theme.AppCompat.Translucent" />
+107-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:53:13-63
+108
+109        <provider
+109-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:55:9-58:40
+110            android:name="com.cashfree.pg.CashfreeAndroidSdkContentProvider"
+110-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:56:13-77
+111            android:authorities="com.umobile.cashfreeandroidsdkcontentprovider"
+111-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:57:13-85
+112            android:exported="false" />
+112-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:58:13-37
+113
+114        <meta-data
+114-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:60:9-62:78
+115            android:name="cashfree_pg_core_auto_initialization_enabled"
+115-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:61:13-72
+116            android:value="@bool/cashfree_pg_core_auto_initialize_enabled" />
+116-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:62:13-75
+117        <meta-data
+117-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:63:9-65:72
+118            android:name="cashfree_pg_core_reporting_enabled"
+118-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:64:13-62
+119            android:value="@bool/cashfree_pg_core_reporting_enabled" />
+119-->[com.cashfree.pg:android-sdk:1.7.28] /Users/db-mm-026/.gradle/caches/transforms-3/9cb3147c0c6d83d82e9b6c0c718281a4/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:65:13-69
+120        <meta-data
+120-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/db-mm-026/.gradle/caches/transforms-3/34964e0a161d03da22f5958ad8b1387b/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:11:9-13:43
+121            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+121-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/db-mm-026/.gradle/caches/transforms-3/34964e0a161d03da22f5958ad8b1387b/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:12:13-84
+122            android:value="GlideModule" />
+122-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/db-mm-026/.gradle/caches/transforms-3/34964e0a161d03da22f5958ad8b1387b/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:13:13-40
+123
+124        <activity
+124-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+125            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+125-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+126            android:excludeFromRecents="true"
+126-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+127            android:exported="false"
+127-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+128-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+129        <!--
+130            Service handling Google Sign-In user revocation. For apps that do not integrate with
+131            Google Sign-In, this service will never be started.
+132        -->
+133        <service
+133-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+134            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+134-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+135            android:exported="true"
+135-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+136            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+136-->[com.google.android.gms:play-services-auth:17.0.0] /Users/db-mm-026/.gradle/caches/transforms-3/e4e945602882bd2448a16c84d98e756d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+137
+138        <activity
+138-->[com.google.android.gms:play-services-base:17.1.0] /Users/db-mm-026/.gradle/caches/transforms-3/be01f1687958d5a8bfa296d1637c8284/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+139            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+139-->[com.google.android.gms:play-services-base:17.1.0] /Users/db-mm-026/.gradle/caches/transforms-3/be01f1687958d5a8bfa296d1637c8284/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-base:17.1.0] /Users/db-mm-026/.gradle/caches/transforms-3/be01f1687958d5a8bfa296d1637c8284/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-base:17.1.0] /Users/db-mm-026/.gradle/caches/transforms-3/be01f1687958d5a8bfa296d1637c8284/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+142    </application>
+143
+144</manifest>

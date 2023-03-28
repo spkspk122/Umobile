@@ -1,0 +1,13 @@
+current directory: /Users/db-mm-026/Desktop/umobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+/Users/db-mm-026/.rvm/rubies/ruby-2.7.5/bin/ruby -I /Users/db-mm-026/.rvm/rubies/ruby-2.7.5/lib/ruby/site_ruby/2.7.0 -r ./siteconf20230317-8035-1azg9w4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/db-mm-026/Desktop/umobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+make DESTDIR\= clean
+
+current directory: /Users/db-mm-026/Desktop/umobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+make DESTDIR\=
+make: Nothing to be done for `all'.
+
+current directory: /Users/db-mm-026/Desktop/umobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+make DESTDIR\= install
