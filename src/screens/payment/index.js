@@ -8,34 +8,31 @@ import {
   Button,
   TextInput,
   ScrollView,
-} from 'react-native';
-import React, {Component} from 'react';
-import {heightPercentageToDP} from 'react-native-responsive-screen';
+} from "react-native";
+import React, { Component } from "react";
+import { heightPercentageToDP } from "react-native-responsive-screen";
 
-import RightArrow from '../../assets/svg/common/rightArrow.svg';
-import Offer from '../../assets/svg/common/offer.svg';
-import LeftArrow from '../../assets/svg/common/leftarrow.svg';
-import WalletIcon from '../../assets/svg/common/wallet.svg';
-import NetBankIcon from '../../assets/svg/common/bank.svg';
-import StarIcon from '../../assets/svg/common/star.svg';
-import Card from '../../assets/svg/common/card.svg';
-import DownArrow from '../../assets/svg/common/downArror.svg';
-import UpArrow from '../../assets/svg/common/upArrow.svg';
-import Cancle from '../../assets/svg/common/cancle.svg';
-import Eye from '../../assets/svg/common/eye.svg';
-import navigationService from '../../routes/navigationService';
-import {connect} from 'react-redux';
-import styles from '../../components/accordian/styles';
+import RightArrow from "../../assets/svg/common/rightArrow.svg";
+import Offer from "../../assets/svg/common/offer.svg";
+import LeftArrow from "../../assets/svg/common/leftarrow.svg";
+import WalletIcon from "../../assets/svg/common/wallet.svg";
+import NetBankIcon from "../../assets/svg/common/bank.svg";
+import StarIcon from "../../assets/svg/common/star.svg";
+import Card from "../../assets/svg/common/card.svg";
+import Cancle from "../../assets/svg/common/cancle.svg";
+import Eye from "../../assets/svg/common/eye.svg";
+import navigationService from "../../routes/navigationService";
+import { connect } from "react-redux";
+import styles from "../../components/accordian/styles";
 import {
   NetBanking,
-  paymentDetail,
   recomended,
   upi,
   walletDetail,
-} from '../../components/config';
-import Accordian from '../../components/accordian';
-import style from './styles';
-import Spacer from '../../components/spacer'
+} from "../../components/config";
+import Accordian from "../../components/accordian";
+import style from "./styles";
+import Spacer from "../../components/spacer";
 
 class RadioOptions extends Component {
   constructor(props) {
@@ -45,7 +42,7 @@ class RadioOptions extends Component {
     };
   }
   render() {
-    const {data} = this.props;
+    const { data } = this.props;
     return (
       <>
         <View style={data ? styles.bodyShowBefore : styles.bodyShowAfter}>
@@ -56,13 +53,14 @@ class RadioOptions extends Component {
                   <View style={styles.container1}>
                     <TouchableOpacity
                       onPress={() => {
-                        this.setState({check: index});
-                      }}>
+                        this.setState({ check: index });
+                      }}
+                    >
                       <Image
                         source={
                           this.state.check == index
-                            ? require('../../assets/images/checked.png')
-                            : require('../../assets/images/unchecked.png')
+                            ? require("../../assets/images/checked.png")
+                            : require("../../assets/images/unchecked.png")
                         }
                         style={styles.img}
                       />
@@ -71,14 +69,15 @@ class RadioOptions extends Component {
                     <Image
                       source={item?.img}
                       style={styles.img1}
-                      resizeMode={'contain'}
+                      resizeMode={"contain"}
                     />
                     <View
                       style={{
-                        width: '90%',
+                        width: "90%",
 
-                        justifyContent: 'space-between',
-                      }}>
+                        justifyContent: "space-between",
+                      }}
+                    >
                       <View>
                         <Text style={styles.txt}>{item?.text}</Text>
                         {item?.desc && (
@@ -88,7 +87,7 @@ class RadioOptions extends Component {
                     </View>
                   </View>
                   {item?.link && (
-                    <TouchableOpacity style={{width: '30%', marginTop: '2%'}}>
+                    <TouchableOpacity style={{ width: "30%", marginTop: "2%" }}>
                       <Text style={styles.linkAndPay}>🔗 link&pay</Text>
                     </TouchableOpacity>
                   )}
@@ -126,25 +125,27 @@ class CardPayment extends Component {
     };
   }
   render() {
-    const {onPressFilter, value, onChange, onPressSearch} = this.props;
+    const { onPressFilter, value, onChange, onPressSearch } = this.props;
     return (
       <View
-        style={this.state.show ? styles.showBbodyBefore : styles.showBodyAfter}>
+        style={this.state.show ? styles.showBbodyBefore : styles.showBodyAfter}
+      >
         <View style={styles.contain1}>
-          <View style={{flexDirection: 'row'}}>
-            <View style={{width: '87%'}}>
+          <View style={{ flexDirection: "row" }}>
+            <View style={{ width: "87%" }}>
               <TextInput
                 value={value}
                 onChangeText={onChange}
                 style={styles.cardTxt}
                 placeholder="Card number"
-                placeholderTextColor={'#A9A9A9'}
+                placeholderTextColor={"#A9A9A9"}
               />
             </View>
             <View>
               <TouchableOpacity
                 onPress={onPressSearch}
-                style={styles.cancleBtn}>
+                style={styles.cancleBtn}
+              >
                 <Cancle />
               </TouchableOpacity>
             </View>
@@ -158,19 +159,19 @@ class CardPayment extends Component {
                 onChangeText={onChange}
                 style={styles.txtInput}
                 placeholder="Valid thru (mm/yy)"
-                placeholderTextColor={'#A9A9A9'}
+                placeholderTextColor={"#A9A9A9"}
               />
             </View>
           </View>
           <View style={styles.cvvView}>
-            <View style={{flexDirection: 'row'}}>
-              <View style={{width: '70%'}}>
+            <View style={{ flexDirection: "row" }}>
+              <View style={{ width: "70%" }}>
                 <TextInput
                   value={value}
                   onChangeText={onChange}
                   style={styles.cvvInput}
                   placeholder="Cvv"
-                  placeholderTextColor={'#A9A9A9'}
+                  placeholderTextColor={"#A9A9A9"}
                 />
               </View>
               <View>
@@ -196,41 +197,41 @@ class PaymentClass extends Component {
         {
           id: 1,
           icon: <WalletIcon />,
-          label: 'Wallet',
+          label: "Wallet",
           children: <RadioOptions data={walletDetail} />,
         },
         {
           id: 2,
           icon: <NetBankIcon />,
-          label: 'NetBanking',
+          label: "NetBanking",
           children: <RadioOptions data={NetBanking} />,
         },
         {
           id: 3,
           icon: <StarIcon />,
-          label: 'Recomended',
+          label: "Recomended",
           children: <RadioOptions data={recomended} />,
         },
         {
           id: 4,
           icon: (
             <Image
-              source={require('../../assets/images/upi.png')}
+              source={require("../../assets/images/upi.png")}
               style={{
-                width: '10%',
-                height: '60%',
-                marginTop: '2%',
-                resizeMode: 'contain',
+                width: "10%",
+                height: "60%",
+                marginTop: "2%",
+                resizeMode: "contain",
               }}
             />
           ),
-          label: 'UPI',
+          label: "UPI",
           children: <RadioOptions data={upi} />,
         },
         {
           id: 5,
           icon: <Card />,
-          label: 'Credit/Debit/ATM Cards',
+          label: "Credit/Debit/ATM Cards",
           children: <CardPayment />,
         },
       ],
@@ -238,33 +239,35 @@ class PaymentClass extends Component {
   }
 
   toggleExpand = () => {
-    this.setState({show: !this.state.show});
+    this.setState({ show: !this.state.show });
   };
 
-  handleAccordion = id => {
+  handleAccordion = (id) => {
     if (this.state.activeAccordion === id) {
-      this.setState({activeAccordion: null});
+      this.setState({ activeAccordion: null });
     } else {
-      this.setState({activeAccordion: id});
+      this.setState({ activeAccordion: id });
     }
   };
 
   render() {
-    const {onPressFilter, paymentData} = this.props;
-    let {data} = this.props.route.params;
+    const { onPressFilter, paymentData } = this.props;
+    let { data } = this.props.route.params;
 
     return (
       <View
         style={{
-          backgroundColor: '#ebf1fe',
+          backgroundColor: "#ebf1fe",
           flex: 1,
-        }}>
+        }}
+      >
         <View style={style.paymentContainer}>
           <TouchableOpacity
             onPress={() => navigationService.goBack()}
-            style={style.touch1}>
-            <View style={{alignSelf: 'center', padding: '5%'}}>
-              <LeftArrow />
+            style={style.touch1}
+          >
+            <View style={{ alignSelf: "center", padding: "5%" }}>
+              <LeftArrow stroke="#a6a9ae" />
             </View>
           </TouchableOpacity>
           <Text style={style.text1}>Payment</Text>
@@ -272,44 +275,45 @@ class PaymentClass extends Component {
         <ScrollView>
           <View style={style.view1}>
             <View style={style.view2}>
-              <Text style={style.text2}>amount Payable</Text>
+              <Text style={style.text2}>amount payable</Text>
               <Text style={style.price1}>{` ₹ ${data.price} `}</Text>
             </View>
             <View style={style.bbView}>
-              <Text style={style.bbTxt}>BroadBandId:1323345354345335</Text>
+              <Text style={style.bbTxt}>broadband bill:1323345354345335</Text>
             </View>
           </View>
 
           <View style={style.footerView}>
             <TouchableOpacity style={style.footerTouch}>
-              <View style={{backgroundColor: '#0cedc0', borderRadius: 15}}>
+              <View style={{ backgroundColor: "#0cedc0", borderRadius: 15 }}>
                 <Offer />
               </View>
-              <Text style={style.footerTxt}>selectOffer,More</Text>
-              <View style={{marginTop:'2.5%'}}>
-              <RightArrow />
+              <Text style={style.footerTxt}>select offers,save more</Text>
+              <View style={{ marginTop: "2.5%" }}>
+                <RightArrow />
               </View>
-            
             </TouchableOpacity>
           </View>
-          <View style={{marginTop: '5%', width: '90%', alignSelf: 'center'}}>
-            <Text style={style.selectTxt}>select Payment Option</Text>
+          <View style={{ marginTop: "5%", width: "90%", alignSelf: "center" }}>
+            <Text style={style.selectTxt}>Select payment options</Text>
             <View style={style.accordianView}>
-              {this.state.accordionData.map(item => (
+              {this.state.accordionData.map((item) => (
                 <Accordian
+                  key={item.id}
                   id={item.id}
                   icon={item?.icon}
                   activeAccordian={this.state.activeAccordion}
-                  onPress={id => this.handleAccordion(id)}
-                  label={item?.label}>
+                  onPress={(id) => this.handleAccordion(id)}
+                  label={item?.label}
+                >
                   {item.children}
                 </Accordian>
               ))}
             </View>
           </View>
         </ScrollView>
-    <Spacer height={heightPercentageToDP("2%")}/>
-        <View style={{backgroundColor: 'white'}}>
+        <Spacer height={heightPercentageToDP("2%")} />
+        <View style={{ backgroundColor: "white" }}>
           <View style={style.downView}>
             <View style={style.downView1}>
               <View>
@@ -321,9 +325,10 @@ class PaymentClass extends Component {
 
               <TouchableOpacity
                 onPress={() => {
-                  alert('Payment Success');
+                  alert("Payment Success");
                 }}
-                style={style.downTch}>
+                style={style.downTch}
+              >
                 <Text style={style.payTxt}>pay now</Text>
               </TouchableOpacity>
             </View>
@@ -334,7 +339,7 @@ class PaymentClass extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     paymentData: state.paymentData,
   };
